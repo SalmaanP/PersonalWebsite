@@ -6,30 +6,47 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
     <title>Salmaan Pehlari</title>
-    <link rel="shortcut icon" type="image/x-icon"
-          href=""/>
 
-    <meta name="projects_count" content="2"/>
+
+    <meta name="projects_count" content="10"/>
     <link rel="stylesheet" media="all"
-          href="/stylesheets/main.css"/>
+          href="stylesheets/main.css"/>
+    <link rel="stylesheet" media="all"
+          href="stylesheets/style.css"/>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <script src="/javascripts/main.js"></script>
 
 </head>
 <body>
 <div class="page">
-    <div id="h" style="background-image: linear-gradient(rgba(0, 182, 255, 0.7), rgba(0, 182, 255, 0.7)), url(/images/cover.jpeg);">
-        <div class="logo"><h2>SALMAAN</h2></div>
+    <div id="h"
+         style="background-image: linear-gradient(rgba(0, 182, 255, 0.7), rgba(0, 182, 255, 0.7)), url(/images/cover.jpeg);">
+        <div class="logo"><h2>SALMAAN</h2><span style="float:right; margin-right:40px">
+
+                </span></div>
+
         <div class="container centered">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2"><h1 class="greeting" style="margin-top:50px;margin-bottom:0px">Hi,
-                        my name is <b>Salmaan Pehlari</b></h1>
-                    <h1 class="mission-statement">I do things</h1></div>
+                <div class="col-md-8 col-md-offset-2"><h1 class="greeting" style="margin-top:50px;margin-bottom:0px">
+                        Hey,
+                        I'm <b>Salmaan Pehlari</b></h1>
+                    <h2 class="mission-statement">I love to make things happen!</h2></div>
             </div>
         </div>
     </div>
     <div class="container ptb" style="padding-top:50px;padding-bottom:20px">
-        <div class="row"><h2 class="centered mb">Graduate Student at San Jose State University</h2></div>
+        <div class="row"><h2 class="centered mb" data-toggle="tooltip" title="Go Spartans!">Software Engineering Grad Student at San Jose State University</h2>
+            <div class="mb centered" style="margin-left:30px;margin-right:30px;"><h3><strong>Right now I am,</strong>
+                </h3>
+                <p><b> Seeking Internship Opportunities for Summer 2017 </b></p>
+                <a href="/resume"><h4>Have a look at my Resume</h4></a></div>
+        </div>
     </div>
+
+
     <div id="g2">
         <div class="container">
             <div class="row centered"><h2 style="margin-top:62px">Check out some of my projects and passions</h2>
@@ -38,7 +55,72 @@
         </div>
         <div class="portfolio-centered mt"></div>
         <div class="recentitems portfolio">
-            <div class="portfolio-item">
+
+            <!--airbnb-->
+            <div name="airbnb" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/airbnb.png"
+                                               alt="Airbnb"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Airbnb
+                                Prototype</h3><h5 class="a1" data-animate="fadeInDown"
+                                                  style="padding-left:10px;padding-right:10px;color:white;">Built a
+                                distributed 3-tier application offering all functionalities of airbnb. Used Node.js,
+                                Angularjs, RabbitMQ. Implemented user tracking and analytics.</h5></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ebay-->
+            <div name="ebay" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/ebay.png"
+                                               alt="Ebay"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">eBay
+                                Replica</h3><h5 class="a1" data-animate="fadeInDown"
+                                                style="padding-left:10px;padding-right:10px;color:white;">Created an
+                                application offering buying and selling by users. Implemented auction functionality like
+                                eBay.</h5></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--bettercare-->
+            <div name="bettercare" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/bettercare.png"
+                                               alt="Bettercare"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Better
+                                Care</h3><h5 class="a1" data-animate="fadeInDown"
+                                             style="padding-left:10px;padding-right:10px;color:white;">Case Study
+                                analyzing insurance premiums in USA over the last two decades. Also Comparing it with
+                                public healthcare system and estimating effect on federal taxes</h5></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--genus-->
+            <div name="genus" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/genus.png"
+                                               alt="Genus"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Genus</h3><h5
+                                    class="a1" data-animate="fadeInDown"
+                                    style="padding-left:10px;padding-right:10px;color:white;">Built a multiplayer game
+                                using greenfoot framework in Java. Created rich lore and story in addition to
+                                gameplay.</h5><a class="dmbutton a2" style="margin: 10px 5px 20px 5px" target="_blank"
+                                                 data-animate="fadeInUp"
+                                                 href="https://github.com/SalmaanP/CMPE202-Team17"><i
+                                        class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--NAS-->
+            <div name="NAS" class="portfolio-item">
                 <div class="he-wrap tpl6"><img class="img img-responsive"
                                                src="/images/kabaurkya.png"
                                                alt="Capture"/>
@@ -46,16 +128,18 @@
                         <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">News
                                 Aggregator and Summarizer</h3><h5 class="a1" data-animate="fadeInDown"
                                                                   style="padding-left:10px;padding-right:10px;color:white;">
-                                A website which gives you the lowdown of what happened in the world. Everything you need
+                                Gives you the lowdown of what happened in the world. Everything you need
                                 to know, fast and to the point.</h5><a class="dmbutton a2"
                                                                        style="margin: 10px 5px 20px 5px" target="_blank"
                                                                        data-animate="fadeInUp"
                                                                        href="http://www.kabaurkya.xyz/worldnews.php"><i
-                                        class="ion-link"></i></a></div>
+                                        class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item">
+
+            <!--samacharbot2-->
+            <div name="samacharbot2" class="portfolio-item">
                 <div class="he-wrap tpl6"><img class="img img-responsive"
                                                src="/images/samacharbot2.png"
                                                alt="Capture"/>
@@ -66,28 +150,120 @@
                                 bot which finds posts containing news articles and creates a summary along with posting
                                 related news links</h5><a class="dmbutton a2" style="margin: 10px 5px 20px 5px"
                                                           target="_blank" data-animate="fadeInUp"
-                                                          href="https://www.reddit.com/u/samacharbot2"><i
-                                        class="ion-link"></i></a></div>
+                                                          href="https://github.com/SalmaanP/samacharbot2"><i
+                                        class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
                     </div>
                 </div>
             </div>
+
+            <!--hl3-->
+            <div name="hl3" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/hl3.png"
+                                               alt="Hl3"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Reddit HL3
+                                Bot</h3><h5 class="a1" data-animate="fadeInDown"
+                                            style="padding-left:10px;padding-right:10px;color:white;">First steps with
+                                web bots. Looked for people confirming half life 3 (inside joke) and replied to them
+                                while keeping a count.</h5><a class="dmbutton a2" style="margin: 10px 5px 20px 5px"
+                                                              target="_blank" data-animate="fadeInUp"
+                                                              href="https://github.com/SalmaanP/hl3heroku"><i
+                                        class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--tcs-->
+            <div name="tcs" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/work.jpg"
+                                               alt="Default project thumb"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Tata
+                                Consultancy Services</h3><h5 class="a1" data-animate="fadeInDown"
+                                                             style="padding-left:10px;padding-right:10px;color:white;">
+                                Worked at TCS from Dec 2015 - Jul 2016 on SAP ABAP. Part of an upgrade team.</h5></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--iisc-->
+            <div name="iisc" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="/images/intern.jpg"
+                                               alt="Default project thumb"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Indian
+                                Institute of Science, Bangalore</h3><h5 class="a1" data-animate="fadeInDown"
+                                                                        style="padding-left:10px;padding-right:10px;color:white;">
+                                Interned at CadLab from Jun 2014 - Jul 2014 (2 months). Used Intel CnC and LLVM to manage context memory for
+                                schedulable entites</h5>
+                            <!--<a class="dmbutton a2" style="margin: 10px 5px 20px 5px"-->
+                                                           <!--target="_blank" data-animate="fadeInUp"-->
+                                                           <!--href="http://www.google.com"><i-->
+                                        <!--class="fa fa-external-link-square" aria-hidden="true"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--gaming-->
+            <div name="gaming" class="portfolio-item">
+                <div class="he-wrap tpl6"><img class="img img-responsive"
+                                               src="images/dota.jpg"
+                                               alt="Dota"/>
+                    <div class="he-view">
+                        <div class="bg a0" data-animate="fadeIn"><h3 class="a1" data-animate="fadeInDown">Gaming</h3><h5
+                                    class="a1" data-animate="fadeInDown"
+                                    style="padding-left:10px;padding-right:10px;color:white;">Lifelong gamer
+                                </h5><a class="dmbutton a2" style="margin: 10px 5px 20px 5px"
+                                                     target="_blank" data-animate="fadeInUp"
+                                                     href="https://steamcommunity.com/id/hunkdivine/"><i
+                                        class="fa fa-external-link-square" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <div class="container mt hear-from-you">
-            <div class="row clients centered"><h1>I would love to hear from you</h1><a id="publicEmail"
+            <div class="row clients centered"><h1 data-toggle="tooltip" data-placement="auto" title="Seriously, call me">I would love to hear from you</h1><a id="publicEmail"
                                                                                        class="btn btn-conf btn-lg"
                                                                                        style="margin-top:25px"
                                                                                        href="mailto:salmaanpehlari@gmail.com">
-                    <h4>Get in touch</h4></a></div>
+                    <h4>Let's get in touch</h4></a>
+                <ul class="social-buttons" >
+                    <li id="demo1">
+                        <a href="https://www.twitter.com/Salmaaan" class="brandico-twitter-bird"></a>
+                    </li>
+                    <li id="demo2">
+                        <a href="https://www.facebook.com/salmaanpehlari" class="brandico-facebook"></a>
+                    </li>
+                    <li id="demo3">
+                        <a href="https://www.github.com/salmaanP" class="brandico-github"></a>
+                    </li>
+                    <li id="demo3">
+                        <a href="https://www.linkedin.com/in/salmaanP" class="brandico-linkedin"></a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </div>
     <div id="f">
         <div class="container">
             <div class="row centered">
-                <div class="col-md-8 col-md-offset-2"><h4 style="color:white"> © 2016 Salmaan Pehlari</h4><h6><a
-                                class="footer-link" href="http://www.somebody.io">Created by Somebody</a></h6></div>
+                <div class="col-md-8 col-md-offset-2"><h4 style="color:white"> © 2016 Salmaan Pehlari</h4><h6></h6>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </body>
 </html>

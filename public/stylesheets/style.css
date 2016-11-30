@@ -1,8 +1,75 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+ul.social-buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+ul.social-buttons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul.social-buttons li a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+}
+
+ul.social-buttons li a.brandico-twitter-bird {
+    background-color: #4099FF;
+}
+
+ul.social-buttons li a.brandico-github {
+    background-color: black;
+}
+
+ul.social-buttons li a.brandico-facebook {
+    background-color: #3B5998;
+}
+
+ul.social-buttons li a.brandico-instagram {
+    background-color: #3f729b;
+}
+
+
+ul.social-buttons li a.brandico-linkedin {
+    background-color: #0e76a8;
+}
+
+
+ul li#demo1 a {
+    transition: transform 0.2s linear;
+}
+
+ul li#demo1:hover a {
+    transform: translateY(-10px);
+}
+
+
+ul li#demo2 a {
+    transition: transform 0.5s ease-in-out;
+}
+
+ul li#demo2:hover a {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+
+
+ul li#demo3 a {
+    transition: transform 0.2s ease-in-out 0;
+}
+
+ul li#demo3:hover a {
+    transform: rotateZ(27deg) scale(1.1);
 }
