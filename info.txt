@@ -1,3 +1,7 @@
+Create soft link for running node from CLI on ubuntu aws. (runs on nodejs)
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+
 To View:
 sudo iptables -t nat -L
 
