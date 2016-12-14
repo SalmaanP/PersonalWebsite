@@ -15,3 +15,15 @@ For Persisting on reboot:
 Add these two lines in /etc/network/interfaces:
 pre-up iptables-restore < /etc/iptables.rules
 post-down iptables-save > /etc/iptables.rules
+
+
+To start app on server restart:
+pm2 startup
+pm2 save 
+or pm2 update
+
+find process
+ps OR lsof -i :3000 (port number)
+
+kill process:
+kill -9 pid
