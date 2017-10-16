@@ -55,7 +55,7 @@ hr{
     width: 40%;
 }
 
-#xgds-img{
+#img1{
     /*height: 425px;
     width: 565px;*/
     display: block;
@@ -63,25 +63,25 @@ hr{
     height: auto;
 }
 
-#encoder-img{
+#img2{
     display: block;
     width: 80%;
     height: auto;
 }
 
-#ciac-img{
+#img3{
     display: block;
     width: 80%;
     height: auto;
 }
 
-#indexr-img{
+#img4{
     display: block;
     width: 80%;
     height: auto;
 }
 
-#s3-img{
+#img5{
     display: block;
     width: 80%;
     height: auto;
@@ -269,15 +269,15 @@ hr{
         width: 50%;
     }
 
-    #xgds-img{
+    #img1{
         width: 70%;
     }
 
-    #indexr-img{
+    #img4{
         width: 35%;
     }
 
-    #s3-img{
+    #img5{
         width: 45%;
     }
 }
@@ -287,15 +287,15 @@ hr{
         width: 60%;
     }
 
-    #xgds-img{
+    #img1{
         width: 80%;
     }
 
-    #indexr-img{
+    #img4{
         width: 45%;
     }
 
-    #s3-img{
+    #img5{
         width: 50%;
     }
 }
@@ -305,15 +305,15 @@ hr{
         width: 70%;
     }
 
-    #xgds-img{
+    #img1{
         width: 80%;
     }
 
-    #indexr-img{
+    #img4{
         width: 80%;
     }
 
-    #s3-img{
+    #img5{
         width: 40%;
     }
 }
@@ -327,23 +327,23 @@ hr{
         font-size: 14pt;
     }
 
-    #xgds-img{
+    #img1{
         width: 90%;
     }
 
-    #indexr-img{
+    #img4{
         width: 40%;
     }
 
-    #s3-img{
+    #img5{
         width: 45%;
     }
 
-    #encoder-img{
+    #img2{
         width: 80%;
     }
 
-    #ciac-img{
+    #img3{
         width: 95%;
     }
 }
