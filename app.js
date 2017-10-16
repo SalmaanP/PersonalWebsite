@@ -28,10 +28,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/users', users);
 
 app.get('/', function(req, res){
+
+
+    writeLog('home', req);
+    res.render('new_home');
+});
+
+app.get('/test', function(req, res){
+    writeLog('test', req);
     res.render('home');
 });
 
 app.get('/resume', function (req, res) {
+    writeLog('resume', req);
     var filePath = "/public/salmaan.pdf";
 
     fs.readFile(__dirname + filePath , function (err,data){
@@ -61,6 +70,18 @@ app.use(function(err, req, res, next) {
 
 
 
+function writeLog(type, req){
 
+
+    fs.appendFile('visitlog.txt', type + ',' + new Date() + ',' + (req.headers['x-forwarded-for'] ||
+        req.connection.remoteAddress ||
+        req.socket.remoteAddress ||
+        req.connection.socket.remoteAddress).split(",")[0] + '\n', function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
+
+
+}
 
 module.exports = app;
